@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ListCoursesComponent from './ListCoursesComponent';
-import { Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Router, Switch, Route } from 'react-router-dom';
 import CourseComponent from './CourseComponent';
 
 class InstructorApp extends Component {
     render(){
         return(
-        <Router>
+        <BrowserRouter>
         <>
             <h1>Instructor Application</h1>
             <Switch>
@@ -16,7 +16,7 @@ class InstructorApp extends Component {
             </Switch>
             
             </>
-            </Router>
+            </BrowserRouter>
         )
     }
 }
